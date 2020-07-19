@@ -1,0 +1,17 @@
+{
+  "name": "@docker-app-starter/database",
+  "version": "1.0.0",
+  "description": "Data base representation of ",
+  "scripts": {
+    "clean": "docker rm -f das-bdd--container",
+    "build": "docker image build -t das-bdd--image .",
+    "start": "docker run --detach --name das-bdd--container -d -p 5432:5432 das-bdd--image",
+    "psql": "docker exec -it das-bdd--container psql -U postgres --dbname=das-bdd",
+    "logs": "docker container logs das-bdd--container"
+  },
+  "author": "cevex",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.3.0"
+  }
+}

@@ -1,0 +1,21 @@
+
+
+.app-container {
+    width: 100%;
+}
+
+.app-title {
+    width: 100%;
+}
+
+.app-list {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    min-width: fit-content;
+    height: fit-content;
+}
+
+.app-item {
+
+}
